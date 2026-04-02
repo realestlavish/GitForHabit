@@ -1,11 +1,9 @@
 package src;
 
-import com.google.gson.Gson;
 import java.util.Scanner;
 import java.time.LocalDate;
 import HabitMethods.HabitTracker;
 import Habit.Habit;
-
 public class MainHabit {
     public static void main(String[] args) {
         HabitTracker habitmethod = new HabitTracker();
@@ -76,10 +74,15 @@ public class MainHabit {
                     case 6:
                         System.out.println("Enter the Habit ID to view streak:");
                         int streakId = readInt(inputHabit);
+                        System.out.println("Enter the month to view streak:");
+                        int streakMonth= readInt(inputHabit);
+                        System.out.println("Enter the year to view streak:");
+                        int streakYear= readInt(inputHabit);
                         Habit toCheck = habitmethod.findHabitById(streakId);
                         if (toCheck != null) {
                             int streak = habitmethod.getStreak(toCheck);
                             System.out.println("Current streak for '" + toCheck.getHabitName() + "': " + streak);
+                            streakDisplay.streakHistoryDisplay(habitmethod.findHabitById(streakId),streakMonth,streakYear);
                         } else {
                             System.out.println("Habit with ID " + streakId + " not found.");
                         }

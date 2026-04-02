@@ -1,0 +1,24 @@
+[
+  {
+    "habitId": 1,
+    "habitName": "cycling",
+    "habitDescription": "cycling for 2 hours",
+    "frequency": "daily",
+    "target": 7,
+    "streakHistory": {
+      "2026-04-02": true
+    },
+    "dataList": []
+  },
+  {
+    "habitId": 2,
+    "habitName": "Game ",
+    "habitDescription": "Playing COD for 2 hours",
+    "frequency": "weekly",
+    "target": 3,
+    "streakHistory": {
+      "2026-04-02": true
+    },
+    "dataList": []
+  }
+]
