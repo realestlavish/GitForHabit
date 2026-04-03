@@ -1,0 +1,13 @@
+[
+    {
+    "habitId": 1,
+    "habitName": "Example Habit",
+    "habitDescription": "This is an example",
+    "frequency": "daily",
+    "target": 0,
+    "streakHistory": {
+        "2026-04-01": true,
+        "2026-04-02": false
+        }
+    }
+]
