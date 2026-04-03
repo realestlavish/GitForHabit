@@ -1,40 +1,50 @@
 # 📌 GitForHabit
 
-**A Terminal-Based Personal Habit Tracker (Java CLI App)**
+**A Terminal-Based Habit Tracker Inspired by Git**
 
-GitForHabit is a lightweight command-line application that helps you build and maintain daily habits by tracking your progress, calculating streaks, and storing your consistency history — all directly from the terminal.
+GitForHabit is a lightweight command-line application that helps you build and maintain daily habits by tracking consistency, calculating streaks, and storing progress — all directly from your terminal.
 
-* Each day = a commit
-* Each habit = a tracked entity
-* Your streak = contribution consistency
+It brings a **Git-like mindset to self-discipline**, where your daily actions become measurable contributions.
 
+---
+
+## 🧠 Concept
+
+* Each day = a **commit**
+* Each habit = a **tracked entity**
+* Your streak = **consistency graph**
+
+You can also define **weekly habit goals**:
+
+* Set a minimum frequency (e.g., 4 times/week)
+* If achieved, the week counts as a successful streak
 
 ---
 
 ## 🚀 Features
 
-* ➕ **Add Habits**
-  Create and manage your personal habits easily.
+* ➕ **Add & Manage Habits**
+  Easily create and maintain multiple habits.
 
-* 🔥 **Streak Tracking**
-  Automatically calculates streaks to keep you motivated.
+* 🔥 **Daily & Weekly Streak Tracking**
+  Tracks both continuous streaks and goal-based weekly consistency.
 
 * 📜 **Persistent Storage (JSON)**
-  Saves your habits using a JSON file (`habits.json`) so your data is never lost.
+  All data is saved in `habits.json`, ensuring progress is never lost.
 
 * 💻 **Terminal-Based Interface**
-  Fast, simple, and distraction-free experience.
+  Fast, minimal, and distraction-free workflow.
 
-* 🧠 **Git-style Habit Tracking Concept**
-  Think of each day as a commit and your consistency as a contribution graph.
+* 🧠 **Git-Inspired Tracking System**
+  Encourages consistency using a version-control-like mindset.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Java** (Core logic)
-* **Gson** (JSON handling)
-* **CLI (Terminal-based UI)**
+* **Java** — Core application logic
+* **Gson** — JSON serialization/deserialization
+* **CLI** — Terminal-based interaction
 
 ---
 
@@ -104,8 +114,8 @@ java -cp ".:lib/gson-2.10.1.jar" com.lavish.habittracker.MainHabit
   ```
   habits.json
   ```
-* If the file does not exist, it is automatically created.
-* Default format:
+* Automatically created if missing
+* Default structure:
 
   ```
   []
@@ -115,18 +125,19 @@ java -cp ".:lib/gson-2.10.1.jar" com.lavish.habittracker.MainHabit
 
 ## ⚠️ Notes
 
-* `.class` files are ignored using `.gitignore`
-* Ensure Java is installed and configured (`java -version`)
-* Gson library is required (already included in `/lib`)
+* `.class` files are excluded via `.gitignore`
+* Ensure Java is installed (`java -version`)
+* Gson dependency is included in `/lib`
 
 ---
 
 ## 🤝 Contributing
 
-Feel free to fork this repository and improve it!
+Contributions are welcome!
+Feel free to fork the repository and submit a pull request.
 
 ---
 
 ## 📜 License
 
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License.

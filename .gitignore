@@ -1,7 +1,7 @@
 # User data 
 habits.json
 
-# VS Code Java output
+# VS Code Executables
 bin/
 *.class
 
