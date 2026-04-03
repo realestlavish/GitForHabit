@@ -1,0 +1,10 @@
+# User data 
+habits.json
+
+# VS Code Java output
+bin/
+*.class
+
+# OS junk files
+.DS_Store
+Thumbs.db
