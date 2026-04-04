@@ -95,14 +95,14 @@ chmod +x run.sh
 
 ```
 javac -cp ".;lib/gson-2.10.1.jar" -d . src/com/lavish/habittracker/*.java
-java -cp ".;lib/gson-2.10.1.jar" com.lavish.habittracker.MainHabit
+java -cp ".;lib/gson-2.10.1.jar" com.lavish.habittracker.HabitApp
 ```
 
 ### Mac/Linux
 
 ```
 javac -cp ".:lib/gson-2.10.1.jar" -d . src/com/lavish/habittracker/*.java
-java -cp ".:lib/gson-2.10.1.jar" com.lavish.habittracker.MainHabit
+java -cp ".:lib/gson-2.10.1.jar" com.lavish.habittracker.HabitApp
 ```
 
 ---
